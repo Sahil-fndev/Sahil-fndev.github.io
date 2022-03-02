@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --head-font-size: clamp(1.50rem, calc(1.11rem + 1.95vw), 2.50rem);
+    --h1-font-size: clamp(3.24rem, calc(2.20rem + 5.20vw), 6.10rem);
+    --h2-font-size: clamp(2.25rem, calc(1.65rem + 3.01vw), 3.91rem);
+    --h3-font-size: clamp(1.88rem, calc(1.42rem + 2.27vw), 3.13rem);
+    --font-size: clamp(1.20rem, calc(0.50rem + 3.50vw), 3.13rem);
+    --secondary-font-size: clamp(1.56rem, calc(1.22rem + 1.70vw), 2.50rem);
+    --btn-font-size: clamp(1.00rem, calc(0.46rem + 2.72vw), 2.50rem);
+    --icon-font-size:clamp(3.24rem, calc(2.20rem + 5.20vw), 6.10rem);
+    --footer-font-size: clamp(0.43rem, 0.07rem + 1.83vw, 1.44rem);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+    margin-bottom: 5%;
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+}
+
+p {
+    font-size: var(--font-size);
+}
+
+ul {
+
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    margin-top: 5%;
+    width: 20%;
+    background: none;
+    border: 5% solid orange;
+}
+
+button:hover {
+    transform: scale(0.9);
+    font-weight: 800;
+}
+
+img {
+    min-height: 50%;
+    max-width: 50%;
+    object-fit: cover;
+}
+
+ul li {
+    display: inline;
+}
+
+
+/*                                                        header of the page                                     */
+header {
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 5vh;
+    display: grid;
+    align-items: center;
+    font-size: var(--head-font-size);
+}
+
+nav ul {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr repeat(3, fit-content(10%));
+    column-gap: 5%;
+    grid-template-rows: 1fr;
+}
+
+nav ul li a:hover {
+    transform: scale(0.9);
+    border-bottom: 0.01em solid black;;
+}
+
+.left {
+    justify-self: start;
+}
+
+/*                                                     main section of the page                                */
+
+main {
+    display: grid;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/*                                                home section of the page                                       */
+
+#home {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 5%;
+}
+
+#home .container {
+    height: 20vh;
+    margin: auto;
+}
+
+.container h1 {
+    font-size: var(--h1-font-size);
+}
+
+h1 .name:hover{
+    border-bottom: 0.01em solid black;
+}
+
+#home .btn {
+    width: 100%;
+}
+
+/*                                       about section of the page                                                     */
+
+#about {
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 5%;
+}
+
+#about .container {
+    min-height: 80vh;
+    text-align: center;
+}
+
+#about .btn {
+    width: 80%;
+}
+
+/*                                  skills section of the page                                                         */
+
+#skills {
+    height: 100vh;
+    display: grid;
+    margin-bottom: 5%;
+}
+
+#skills .container {
+    min-height: 80vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 'heading heading'
+    'html css'
+    'js git';
+}
+
+.html, .css, .js, .git {
+    margin: auto;
+    font-size: var(--icon-font-size);
+}
+
+.skill_heading {
+    grid-area: heading;
+    margin: auto;
+}
+
+.html {
+    grid-area: html;
+}
+
+.css {
+    grid-area: css;
+}
+
+.js {
+    grid-area: js;
+}
+
+.git {
+    grid-area: git;
+}
+
+.fa-html5:hover{
+    transform: scale(1.2);
+}
+.fa-css3-alt:hover{
+    transform: scale(1.2);
+}
+.fa-js:hover{
+    transform: scale(1.2);
+}
+
+.fa-git-alt:hover {
+    transform: scale(1.2);
+}
+
+/*                                     project section of the page                                                 */
+
+#projects {
+    min-height: 180vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 10%;
+    padding: 5%;
+}
+
+#projects .container {
+    min-height: 180vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr 1fr 1fr;
+    grid-template-areas: 'heading'
+    'project1'
+    'project2'
+    'project3';
+    column-gap: 4%;
+}
+
+.project1, .project2, .project3 {
+    margin: auto;
+}
+
+.project_heading {
+    grid-area: heading;
+}
+
+.project1 {
+    grid-area: project1;
+}
+.project2 {
+    grid-area: project2;
+}
+.project3 {
+    grid-area: project3;
+}
+
+.img_section {
+    margin: auto;
+    min-width: 50%;
+    height: 40%;
+    overflow: hidden;
+}
+
+#projects .btn {
+    margin-top: 2%;
+    padding: 2%;
+    margin-bottom: 5%;
+}
+
+.bottotop {
+    display: none;
+    z-index: 2;
+    height: 8vh;
+    width: 8vw;
+    outline: none;
+    background: none;
+    border-radius: 50%;
+    position: fixed;
+    left: 90%;
+    bottom: 6%;
+    cursor: pointer;
+}
+
+
+footer {
+    font-size: var(--font-size);
+    font-weight: 600;
+    text-align: center;
+    height: 5%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+footer .social_link {
+    padding: 2% 0;
+}
+
+.social_link p {
+    font-size: var(--font-size);
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+.social_link ul li {
+    padding: 2%;
+}
+
+.fa-linkedin, .fa-github {
+    font-size: var(--font-size);
+}
+
+.copyright_container {
+    padding-bottom: 0.2vh;
+    border-bottom: 0.09vh solid black;
+}
+
+/* @media  only screen and (min-width: 481px){
+    
+    main {
+        height: 800vh;
+    }
+
+    header {
+        height: 9vh;
+    }
+    
+    #about {
+        min-height: 200vh;
+    }
+
+    #about .container {
+        height: 150vh;
+    }
+
+    #projects {
+        min-height: 290vh;
+    }
+
+    #projects .container {
+        height: calc(100% + 10vh);
+        margin: auto;
+    }
+} */
+
+@media screen and (min-width: 576px){
+
+    #projects .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content 1fr 1fr 1fr;
+        grid-template-areas: 'heading '
+        'project1'
+        'project2'
+        'project3';
+    }
+
+    .img_section {
+        width: 100%;
+        height: 100%;
+    }
+
+    #projects .btn {
+        width: 20%;
+        padding: 1%;
+        margin: auto;
+        margin-top: 2%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    #about {
+        min-height: 105vh ;
+    }
+    #about .container {
+        height: 104vh;
+    }
+
+    #projects .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content 1fr 1fr;
+        grid-template-areas: 'heading heading'
+        'project1 project2'
+        'project3 project2';
+    }
+
+    .img_section {
+        width: 100%;
+        height: 100%;
+    }
+
+    #projects .btn {
+        width: 60%;
+        margin: auto;
+        margin-top: 2%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+
+    #about .container {
+        height: 90vh;
+    }
+
+    #projects .container{
+        row-gap: 2%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content 1fr 1fr;
+        grid-template-areas: 'heading heading'
+        'project1 project2'
+        'project3 project2';
+    }
+
+    .img_section {
+        width: 100%;
+        height: 100%;
+    }
+
+    #projects .btn {
+        width: 50%;
+        padding: 1%;
+        margin: auto;
+        margin-top: 2%;
+    }
+}
+
+@media screen and (min-width: 1201px){
+
+    #projects .container{
+        row-gap: 2%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content 1fr 1fr;
+        grid-template-areas: 'heading heading'
+        'project1 project2'
+        'project3 project2';
+    }
+
+    .img_section {
+        width: 100%;
+        height: 100%;
+    }
+
+    #projects .btn {
+        width: 50%;
+        padding: 1%;
+        margin: auto;
+        margin-top: 2%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    #projects .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content 1fr 1fr;
+        grid-template-areas: 'heading heading'
+        'project1 project2'
+        'project3 project2';
+    }
+
+    .img_section {
+        width: 100%;
+        height: 100%;
+    }
+
+    #projects .btn {
+        width: 50%;
+        padding: 1%;
+        margin: auto;
+        margin-top: 2%;
+    }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description"
+        content="The latest projects I've worked on and a description of how I enjoy tweaking CSS.">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="shortcut icon" href="./image/favicon/favicon.ico" type="image/x-icon">
+    <title>Sahil | portfolio</title>
+</head>
+
+<body>
+
+    <!--                     header                                                      -->
+    <header>
+        <nav>
+            <ul>
+                <li class="left"><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--                     main                                        -->
+    <main>
+        <section id="home">
+            <div class="container">
+                <h1>Hello 👋, I'm <span class="name">Sahil</span></h1>
+                <button type="submit" class="btn"><a href="#about">
+                        <p>Know More</p>
+                    </a></button>
+            </div>
+        </section>
+
+        <!--                                         About                                          -->
+        <section id="about">
+            <div class="container">
+                <h2 aria-labelledby="section-heading">About me</h2>
+                <p>
+                    I have always been interested in Information Technology and would like to learn more about it. I
+                    began to become more and more interested in IT as time passed. This was the reason that I pursued a
+                    Bachelor of Technology degree in Information Technology. During my graduation, my colleagues always
+                    appreciated my availability to help and solve problems for them. Additionally, I did industrial
+                    training and took part in personal projects that heightened my interest in this field.
+                </p>
+                <p>
+                    After I graduate, I begin working in an IT company where I acquired new skills and knowledge.
+                    I am now seeking a full-time position where I can contribute my knowledge and expertise to a company
+                    and help them reach their business goals.
+                </p>
+                <button type="submit" class="btn" title="Get CV">
+                    <p>Learn More</p>
+                </button>
+            </div>
+        </section>
+
+        <!--                        skills                     -->
+        <section id="skills">
+            <div class="container">
+                <div class="skill_heading">
+                    <h2 aria-labelledby="section-heading">Skills</h2>
+                </div>
+                <div class="html" aria-label="html-icon">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="css" aria-label="css-icon">
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="js" aria-label="js-icon">
+                    <i class="fa-brands fa-js"></i>
+                </div>
+                <div class="git">
+                    <i class="fa-brands fa-git-alt"></i>
+                </div>
+            </div>
+        </section>
+
+        <!--                                          project                                          -->
+        <section id="projects">
+            <div class="container">
+                <div class="project_heading">
+                    <h2>Projects</h2>
+                </div>
+                <!--                                          project 1                                          -->
+                <div class="project_card project1">
+                    <div class="img_section">
+                        <img src="./image/project/survey-form.PNG" alt="A survey form project">
+                    </div>
+                    <h3>Survey Form</h3>
+                    <p>Created a simple survey form to gather user feedback about the web page.</p>
+                    <button type="submit" aria-labelledby="view-project" class="btn"><a
+                            href="https://sahil-fndev.github.io/survey-form/" target="_blank" rel="noopener noreferrer">
+                            <p>View</p>
+                        </a></button>
+                </div>
+
+                <!--                                          project 2                                          -->
+                <div class="project_card project2">
+                    <div class="img_section">
+                        <img src="./image/project/background-color-changer.PNG"
+                            alt="project no. 3 name Background Color Changer">
+                    </div>
+                    <h3>Background Color Changer</h3>
+                    <p>Every time you click the change button, the background color changes radomly and you can also add
+                        your favorite color to the list and see your color as the background color.</p>
+                    <button type="submit" aria-labelledby="view-project" class="btn"><a
+                        href="https://sahil-fndev.github.io/Background-Color-Changer/" target="_blank" rel="noopener noreferrer">
+                        <p>View</p>
+                    </a></button>
+                </div>
+                
+                <!--                                          project 3                                          -->
+                <div class="project_card project3">
+                    <div class="img_section">
+                        <img src="./image/project/Array.PNG" alt="project no. 3 name array">
+                    </div>
+                    <h3>Array</h3>
+                    <p>An array is a special object that can store multiple items at once. Among one of the special
+                        characteristics of an array in JavaScript is its flexibility, it can grow or shrink as needed.
+                    </p>
+                    <p> However, for this project, I set the array size manually and it shows a warning when the size of
+                        the array exceeds the limit. We can only append items in this array for now by clicking pop ()
+                        button.</p>
+                    <button type="submit" aria-labelledby="view-project" class="btn"><a
+                            href="https://sahil-fndev.github.io/array/" target="_blank" rel="noopener noreferrer">
+                            <p>View</p>
+                        </a>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!--                                         button bottom to top                                          -->
+        <button onclick="topFunction()" class="bottotop" id="btntotop" title="back to top" aria-labelledby="back-to-top"><i
+                class="fa-solid fa-angle-up"></i></button>
+    </main>
+
+    <!--                                         footer                                         -->
+
+    <footer>
+
+        <div class="social_link">
+            <p>Feel free to contact me</p>
+            <ul>
+                <li>
+                    <a href="http://www.linkedin.com/in/sahil96-dev" target="_blank" rel="noopener noreferrer"
+                        title="Connect on Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/Sahil-fndev" target="_blank" rel="noopener noreferrer"
+                        title="Follow on GitHub"><i class="fa-brands fa-github"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright_container">
+            <p>&copy; Copyright <span id="year"></span></p>
+        </div>
+        <div class="author">
+            <p>Designed and developed by Sahil</p>
+        </div>
+    </footer>
+
+    <script src="./scripts/index.js"></script>
+    <script src="https://kit.fontawesome.com/fe62de08af.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
